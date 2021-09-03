@@ -12,3 +12,14 @@ Input: "copyright"
 
 Output: true
 */
+
+function unique(string) {
+  for (i=0; i<string.length; i++) {
+    //console.log(string[i])
+    for(j=0; j<string.length; j++) {
+      console.log(string[i], " = ", string[j])
+    }
+  }
+}
+unique("hello")
+unique("copyright")
