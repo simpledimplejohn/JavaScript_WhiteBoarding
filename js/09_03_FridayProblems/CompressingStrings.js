@@ -6,5 +6,27 @@ Example
 
 Input: "aaabccdddda"
 
-Output: "3ab2c4da"
+Output: "a3b2c4da"
 */
+
+function compress(string) {
+  stringArray = []
+  compressArray = []
+  counter = 0
+  for (i = 0; i < string.length; i ++) {
+    stringArray.push(string[i])
+  }
+  for(j =0; j < stringArray.length; j ++) {
+    if(stringArray[j] === stringArray[j+1]) {
+      counter += 1
+      console.log(stringArray[j], " ", counter)  
+    } else {
+        compressArray.push(stringArray[j])
+        compressArray.push(counter)
+        counter = 0
+    }
+  }
+  return compressArray.join('')
+}
+
+console.log(compress("aaabccdddda"))
