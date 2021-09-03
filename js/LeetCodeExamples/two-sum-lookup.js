@@ -1,31 +1,23 @@
 /*
 https://leetcode.com/problems/two-sum/
-Easy
-Find out which two numbers in an array add up to the target
-Input: nums = [2,7,11,15], target = 9
-Output: [0,1]
-Output: Because nums[0] + nums[1] == 9, we return [0, 1].
+This time with a lookup 
 
-@param {number[]} nums
-@param {number} target
-@return {number[]}
+NOTE 
+i = 0
+j = 1
+fixes duplication
 */
 
 var twoSum = function(nums, target) {
-
   let number = []
-
   for(let i = 0; i < nums.length; i ++) {
-
     for(let j = 0; j < nums.length; j ++) {
-      
-
-      if(nums[i] + nums[j] === target) {
+      console.log(nums[i], " + ", nums[j])
+      if(nums[i] + nums[j] === target && nums[i] != nums[j]) {
         number.push(i, j)
 
         
       }
-      console.log(nums[i], " + ", nums[j])
     }
   }
 
