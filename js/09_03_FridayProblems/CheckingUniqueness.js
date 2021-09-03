@@ -13,13 +13,19 @@ Input: "copyright"
 Output: true
 */
 
-function unique(string) {
-  for (i=0; i<string.length; i++) {
-    //console.log(string[i])
-    for(j=0; j<string.length; j++) {
-      console.log(string[i], " = ", string[j])
-    }
+function run(string) {
+  
+  dict = {};
+  
+  for(let i = 0; i < string.length; i++) {
+    dict[string[i]] = 1;
   }
+  
+  console.log(dict)
+
+  for (let property in dict) {
+    console.log(`${property}: ${dict[property]}`)
+  }
+
 }
-unique("hello")
-unique("copyright")
+run("hello")

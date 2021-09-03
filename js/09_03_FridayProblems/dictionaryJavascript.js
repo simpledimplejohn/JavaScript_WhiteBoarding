@@ -1,7 +1,7 @@
 function run(string) {
   dict = {};
   for(i = 0; i < string.length; i++) {
-    dict[0] = string[i];
+    dict[i] = string[i];
   }
   return dict
 }
