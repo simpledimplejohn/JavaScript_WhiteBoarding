@@ -17,3 +17,21 @@ Input: [9, 2, 7, 12]
 Output: [2, 7, 9, 12]
 */
 
+function test (array) {
+  
+  for(let i = 0; i < string.length; i ++) {
+    for(let j= 0; j < string.length; j ++) {
+      //console.log(j)
+      if(i !== j){
+        console.log( i, j)
+      } 
+
+    }
+
+  }
+  return string
+
+}
+
+console.log(test("this long"))
+

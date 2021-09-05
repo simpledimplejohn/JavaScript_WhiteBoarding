@@ -12,13 +12,17 @@ var twoSum = function(nums, target) {
   const obj = {};
   let outputArray = [];
   for(let i = 0; i < nums.length; i ++) {
-
+    for(let j = 0; j < nums.length; j ++ ) {
+      if(nums[i] !== nums[j]) {
+        console.log(i, nums[i], j, nums[j])
+      }
+    }
   }
 
-  }
+  
 
-  return noutputArray
-};
+  return outputArray
+}
 
 //test
 console.log(twoSum([2, 7, 11, 15], 9), "[0, 1]")
