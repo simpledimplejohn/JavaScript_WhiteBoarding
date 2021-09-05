@@ -1,8 +1,22 @@
-function run(string) {
-  dict = {};
-  for(i = 0; i < string.length; i++) {
-    dict[0] = string[i];
+// jens answer
+
+function checkUnique(string) {
+  const obj = {};
+  let bool = true;
+
+  for (let char of string) {
+    if (!obj[char]) {
+      obj[char] = 1;
+    }
+    else obj[char]++
   }
-  return dict
+
+  for(let key in obj) {
+    if(obj[key] > 1) {
+      bool = false
+    }
+  }
+  return bool
 }
-console.log(run("hello"))
+
+console.log(checkUnique("hello"))

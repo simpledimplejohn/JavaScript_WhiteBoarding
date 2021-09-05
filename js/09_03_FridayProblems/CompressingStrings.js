@@ -10,23 +10,24 @@ Output: "a3b2c4da"
 */
 
 function compress(string) {
-  stringArray = []
-  compressArray = []
-  counter = 0
-  for (i = 0; i < string.length; i ++) {
-    stringArray.push(string[i])
-  }
-  for(j =0; j < stringArray.length; j ++) {
-    if(stringArray[j] === stringArray[j+1]) {
-      counter += 1
-      console.log(stringArray[j], " ", counter)  
+  let obj = {};
+  let outPutString = "";
+  let outPutArray = [];
+
+  for(let char of string) {
+    if (!obj[char]) {
+      obj[char] = 1
     } else {
-        compressArray.push(stringArray[j])
-        compressArray.push(counter)
-        counter = 0
+      obj[char] ++
     }
   }
-  return compressArray.join('')
+  for(let key in obj) {
+    outPutArray.push(key);
+    outPutArray.push(obj[key])
+  }
+  outPutString = outPutArray.join('')
+  return outPutString
 }
 
 console.log(compress("aaabccdddda"))
+console.log(compress("aabccddda"))

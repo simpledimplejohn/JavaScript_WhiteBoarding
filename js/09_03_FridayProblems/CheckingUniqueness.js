@@ -15,17 +15,28 @@ Output: true
 
 function run(string) {
   
-  dict = {};
-  
-  for(let i = 0; i < string.length; i++) {
-    dict[string[i]] = 1;
+  let dict = {};
+  let count = 0;
+  let bool = false 
+  for (let char of string) {
+    if(dict[char] !== 1) {
+    dict[char] = 1
+    } else if (dict[char] === 1) {
+      dict[char] +=1
+    }
   }
   
   console.log(dict)
 
-  for (let property in dict) {
-    console.log(`${property}: ${dict[property]}`)
-  }
+  for (let char in dict) {
+    if(dict[char] > 1) {
+      bool = true
+    } 
 
+    //console.log(`${property}: ${dict[property]}`)
+    
+  }
+  return bool
 }
-run("hello")
+console.log(run("helo"), "[false]")
+console.log(run("hello"), "[true]")

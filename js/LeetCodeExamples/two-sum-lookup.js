@@ -9,19 +9,15 @@ fixes duplication
 */
 
 var twoSum = function(nums, target) {
-  let number = []
+  const obj = {};
+  let outputArray = [];
   for(let i = 0; i < nums.length; i ++) {
-    for(let j = 0; j < nums.length; j ++) {
-      console.log(nums[i], " + ", nums[j])
-      if(nums[i] + nums[j] === target && nums[i] != nums[j]) {
-        number.push(i, j)
 
-        
-      }
-    }
   }
 
-  return number
+  }
+
+  return noutputArray
 };
 
 //test

@@ -19,11 +19,11 @@ var twoSum = function(nums, target) {
 
     for(let j = 0; j < nums.length; j ++) {
       console.log(nums[i], " + ", nums[j])
-      if(nums[i] + nums[j] === target) {
-        number.push(i, j)
-
-        
+      if(nums[i] + nums[j] === target && i !== j) {
+        number.push(i, j)          
       }
+
+    
     }
   }
 
