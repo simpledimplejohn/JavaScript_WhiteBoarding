@@ -4,6 +4,18 @@ function compressString(string) {
     return nothing
   }
   let stringArray = []
-  counter
+  prevChar= 0;
+  counter = 0;
+
+  for(let char of string) {
+    if(char === prevChar) {
+      counter ++;
+    } else if (char !== prevChar) {
+      
+    }
+  }
+
 }
 console.log(compressString())
+console.log(compressString("aaab"))
+console.log(compressString("aaabbbcca"))
