@@ -9,5 +9,5 @@ const Array = (n) => {
   }
   console.log(matrix)
 }
-
-Array(1)
+//the array size is entered in the function bellow:
+Array(10)

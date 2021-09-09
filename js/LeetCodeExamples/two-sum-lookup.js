@@ -1,7 +1,10 @@
 /*
 https://leetcode.com/problems/two-sum/
 This time with a lookup 
+if (key in obj) // is my key in object?
 
+for (const key in obj/ARRAY) // looping through
+for (const value of ARRAY) // loop through values
 
 */
 
@@ -17,6 +20,12 @@ var twoSum = function(nums, target) {
   }
   return outputArray
 }
+
+// O(N) 1000 operations 1000 size array
+// hash table = O(1)
+// 
+// O(n^2) 1,000,000 operations
+
 /*
 {
   2: anything
