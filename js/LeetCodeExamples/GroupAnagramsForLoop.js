@@ -7,8 +7,9 @@
 function doubleFor(array) {
   let newArray = []
   for(let i = 0; i < array.length; i++) {
-    for(let j = i+1; j < array.length; j++) {
+    for(let j = i + 1; j < array.length; j++) {
       console.log(i, j)
+      
     }
   }
   return newArray

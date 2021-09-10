@@ -7,6 +7,8 @@
 // .push()
 // .concat
 // .pop
+// .splice
+// .filter
 
 //Learn these methods today
 
@@ -85,4 +87,26 @@ function concatArrays(array, array2) {
 
 console.log(concatArrays([1,2,3],[0,0,0]), "concat two arrays")
 
+//.splice() REMOVE OR REPLACE property at a location
+
+//Insert at location
+function spliceInsert(array, num, char) {
+  array.splice(num, 1, char)
+  return array
+}
+console.log(spliceInsert(['a','b','c','d'], 1, 'x'))
+
+//Replace splice(start, removeCount, what to replace with)
+function spliceReplace(array, char) {
+  array.splice(3, 1, char)
+  return array
+}
+console.log(spliceReplace(['a','b','c','d'], 'x'))
+
+//REMOVE
+function spliceRemove(array, loc) {
+  array.splice(loc, 1)
+  return array
+}
+console.log(spliceRemove(['a','b','c','d'], 1))
 

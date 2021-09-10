@@ -1,3 +1,5 @@
+//NOT SOLVED
+
 function compressString(string) {
   let nothing = ""
   if(isNaN(string)) {

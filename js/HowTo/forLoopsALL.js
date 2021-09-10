@@ -24,8 +24,8 @@ function reverseFor(string) {
 // to run reverseFor() uncomment console.log below:
 //console.log(reverseFor("abcde"), "['abcde']")
 
-//The double for examples
-
+//The double for THREE examples
+//FIRST--ALL 
 function doubleForAll(string) {
   for(i=0; i < string.length; i ++) {
     for(j = 0; j < string.length; j ++) {
@@ -36,6 +36,7 @@ function doubleForAll(string) {
 }
 console.log(doubleForAll("abc"))
 
+//SECOND--NOT SAME INITIAL, but REVERSES TRUE
 function doubleForAllNoDup(string) {
   for(i=0; i < string.length; i ++) {
     for(j = 0; j < string.length; j ++) {
@@ -49,6 +50,7 @@ function doubleForAllNoDup(string) {
 }
 console.log(doubleForAllNoDup("abc"))
 
+//THIRD
 // this loop compares all elements in an array 
 // without duplicating the initial element
 // or without duplicating the reverse
