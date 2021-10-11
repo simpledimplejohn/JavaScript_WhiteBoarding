@@ -22,6 +22,7 @@ var twoSum = function(nums, target) {
   }
   return outputArray
 }
+console.log(twoSum([2, 7, 11, 15], 9), "[0, 1]")
 
 // O(N) 1000 operations 1000 size array
 // hash table = O(1)
@@ -38,7 +39,7 @@ add num to the obj
 
 //test
 // default solution, no complication
-console.log(twoSum([2, 7, 11, 15], 9), "[0, 1]")
+
 
 // number that can be added to itself for solution, incorrectly
 //console.log(twoSum([3,2,4], 6), "[1, 2]")
