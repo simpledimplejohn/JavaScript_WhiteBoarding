@@ -1,11 +1,3 @@
-// warm up exercises 
-// Write an array
-// forward and backward for loops through an array
-// push to a lookup table and search
-// 
-
-// count array--count the number of items in this array lookup table!
-
 let charArray = ['a', 'b', 'a', 'c', 'a', 'a', 'b', 'b']
 
 let countObject = {
