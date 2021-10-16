@@ -22,4 +22,4 @@ for(let char of charArray) {
   }
 }
 
-console.log((a/8)*100,(b/8)*100,(c/8)*100)
+console.log(Math.round((a/8)*100),Math.round((b/8)*100),Math.round((c/8)*100))
