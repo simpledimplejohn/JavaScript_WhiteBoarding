@@ -1,3 +1,17 @@
+//ES6 Class with constructor
+class PotatoClass {
+  constructor(name, eyes, color) {
+    this.name = name;
+    this.eyes = eyes;
+    this.color = color;
+    this.addEyes = function () {
+      return ++this.eyes;
+    };
+  }
+}
+let newPotatoClass = new PotatoClass("Mrs Potato",5,"very brown");
+
+
 //object constructors
 function Potato(name, eyes, color) {
   this.name= name;
